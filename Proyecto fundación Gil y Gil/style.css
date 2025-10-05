@@ -1,0 +1,95 @@
+/* FONTS */
+@font-face {
+  font-family: "ChunkFive";
+  src: url(./assets/fonts/ComingSoon-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  color: white;
+}
+
+body {
+  background-color: rgb(47, 146, 185);
+  font-family: "ChunkFive";
+}
+/* HEADER */
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2%;
+}
+header > img {
+  width: 15%;
+  object-fit: cover;
+  margin: 2%;
+}
+header > h1 {
+  font-size: 35px;
+}
+header > h2 {
+  margin: 1%;
+}
+/* MAIN */
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main > p {
+  margin: 2%;
+  font-size: 22px;
+}
+main > ul {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+main > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2% 3%;
+}
+main > ul > li > p {
+  font-size: 22px;
+}
+.list {
+  width: 250px;
+  border-radius: 20px;
+  margin-top: 5%;
+}
+main > a {
+  text-decoration: none;
+  background-color: black;
+  padding: 1%;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 22px;
+}
+table {
+  width: 30%;
+  border-collapse: collapse;
+  margin: 5%;
+}
+caption {
+  margin-bottom: 2%;
+  font-size: 20px;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+}
