@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donut's friends</title>
+  </head>
+  <body>
+    <header>
+      <h1>Donut's Friends</h1>
+    </header>
+    <main>
+      <span>
+        <a
+          href="https://www.eleconomista.es/noticias/noticias/10242158/12/19/RANKING-DONUTS-los-mas-buscados-los-mas-singulares-los-mejores-hasta-con-estrellas-Michelin.html"
+          target="_blank"
+          style="display: flex; flex-direction: column"
+          >Los donuts más buscados
+          <img
+            width="300px"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkazRpKpRZ9pq7Qb2vQ95TLW2artshx2EWdw&s"
+            alt="imagen de variedad de donut glaseados"
+        /></a>
+      </span>
+      <br />
+    </main>
+    <footer>
+      <form action="post">
+        <fieldset style="width: 10%; display: flex; flex-direction: column">
+          <legend>Contacta con nosotros</legend>
+          <label for="name">Nombre:</label>
+          <input id="surname" type="text" /><br />
+          <label for="surname">Apellidos:</label>
+          <input id="surname" type="text" /><br />
+          <label for="email">Email:</label>
+          <input id="email" type="email" /><br />
+          <label for="phone">Teléfono:</label>
+          <input id="phone" type="tel" /><br />
+          <label for="date">Fecha:</label>
+          <input id="date" type="date" /><br />
+          <fieldset>
+            <legend>Indique el motivo</legend>
+            <input
+              id="info"
+              type="radio"
+              name="reason"
+              value="Información"
+              checked
+            />
+            <label for="info">Información</label><br />
+            <input id="claim" type="radio" name="reason" value="Reclamación" />
+            <label for="claim">Reclamación</label><br />
+            <input
+              id="attendance"
+              type="radio"
+              name="reason"
+              value="Asistencia"
+            />
+            <label for="attendance">Asistencia</label><br />
+          </fieldset>
+          <fieldset>
+            <legend>Nos ha conocido</legend>
+            <input id="search" type="checkbox" name="choice" value="Buscador" />
+            <label for="search">Buscador</label><br />
+            <input id="add" type="checkbox" name="choice" value="Anuncios" />
+            <label for="adds">Anuncios</label><br />
+            <input id="tv" type="checkbox" name="choice" value="television" />
+            <label for="tv">Televisión</label><br />
+            <input id="podcast" type="checkbox" name="choice" value="podcast" />
+            <label for="podcast">Podcast</label><br />
+          </fieldset>
+          <label for="prefer-donut">Donut preferido</label>
+          <select name="prefer-donut" id="prefer-donut">
+            <option value="no-value"></option>
+            <option value="glazed">Glaseado</option>
+            <option value="chocolate">Cubierto de chocolate</option>
+            <option value="sugar">Azucarado</option>
+            <option value="pink-spinkle">Espolvoreado Rosa</option>
+            <option value="cream-filled">Relleno de crema</option>
+            <option value="bomb">Bomba de chocolate</option></select
+          ><br />
+          <textarea
+            name="add-info"
+            id="add-info"
+            placeholder="Detalle el motivo"
+            style="width: 200px; height: 100px"
+          ></textarea>
+          <button type="submit">Enviar</button>
+        </fieldset>
+      </form>
+    </footer>
+  </body>
+</html>
