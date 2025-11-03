@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedido de Pepinillos</title>
+  </head>
+  <body>
+    <h1>Pepinillos Manolo</h1>
+    <h2>Formulario de pedidos</h2>
+    <p>Aquí puedes rellenar tus datos para realizar un pedido</p>
+    <figure>
+      <img
+        src="./img/img1.jpg"
+        alt="Imagen de un pepinillo con las manos abiertas"
+        width="300"
+      />
+      <figcaption>
+        <a href="https://es.wikipedia.org/wiki/Pepinillo" target="_blank"
+          >Información sobre los pepinillos</a
+        >
+      </figcaption>
+    </figure>
+    <h3>Nuestros tipos de pepinillos</h3>
+    <ul>
+      <li>Espinoso: Pequeño y de piel rugosa</li>
+      <li>Largo: Muy popular en ensaladas, con piel lisa y larga.</li>
+      <li>
+        Armenio: No es un pepino verdadero, sino una variedad con piel rugosa y
+        larga.
+      </li>
+      <li>
+        Holandés: Variedad popular en Europa, robusta y de buen rendimiento.
+      </li>
+      <li>
+        Francés: Usado a menudo para pepinillos en vinagre, con piel fina y
+        textura suave.
+      </li>
+      <li>
+        Kirby: Clásicos de "deli", de piel más gruesa y firmes, que resisten
+        fermentaciones largas.
+      </li>
+    </ul>
+    <figure>
+      <figcaption>Últimos pedidos</figcaption>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Número de pedido</th>
+            <th>Fecha</th>
+            <th>Importe</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>70001</td>
+            <td>20/10/2025</td>
+            <td>33,59€</td>
+          </tr>
+          <tr>
+            <td>70002</td>
+            <td>24/10/2025</td>
+            <td>41,15€</td>
+          </tr>
+          <tr>
+            <td>70003</td>
+            <td>30/10/2025</td>
+            <td>61,20€</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">TOTAL DEL MES</td>
+            <td>135,94€</td>
+          </tr>
+        </tfoot>
+      </table>
+    </figure>
+    <h3>Realiza tu pedido</h3>
+    <form method="post" action="#">
+      <fieldset>
+        <legend>Datos del cliente</legend>
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" name="nombre" id="nombre" required /><br />
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" name="email" id="email" required /><br />
+        <label for="telefono">Teléfono:</label>
+        <input
+          type="tel"
+          id="telefono"
+          name="telefono"
+          placeholder="No olvides poner tu teléfono"
+        />
+      </fieldset>
+      <fieldset>
+        <legend>Detalles del pedido</legend>
+        <label for="cantidad">Cantidad de producto:</label>
+        <input
+          type="number"
+          name="cantidad"
+          id="cantidad"
+          min="1"
+          max="20"
+          required
+        /><br />
+        <label for="tipoPepino">Tipo de pepino:</label>
+        <select name="tipoPepino" id="tipoPepino">
+          <option value="Espinoso">Espinoso</option>
+          <option value="Largo">Largo</option>
+          <option value="Armenio">Armenio</option>
+          <option value="Holandes">Holandés</option>
+          <option value="Kirby">Kirby</option></select
+        ><br />
+        <label for="comentarios">Comentarios</label>
+        <textarea
+          name="comentarios"
+          id="comentarios"
+          placeholder="Cuéntanos tus dudas"
+        ></textarea
+        ><br />
+        <label for="uploadFile">Subir archivo</label>
+        <input
+          id="uploadFile"
+          name="uploadFile"
+          type="file"
+          accept=".jpg, .pdf"
+          multiple
+        /><br />
+        <label for="progreso">Progreso: </label>
+        <progress id="progreso" value="50" max="100">50%</progress>
+      </fieldset>
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Borrar" />
+    </form>
+  </body>
+</html>
